@@ -73,7 +73,7 @@ function type(e) {
 
   } else if (e.textContent === 'del') {
     // If sequence is still a string (not a number result from eval)
-    if (typeof sequence === 'string' && sequence !== '') {
+    if (typeof sequence === 'string' && expression.textContent.length > 1) {
       sequence = sequence.slice(0, -1);
       expression.textContent = sequence.replace(/\*/g, 'x');
 

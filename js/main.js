@@ -86,9 +86,11 @@ function type(e) {
 }
 
 function clear() {
-  sequence = '';
-  expression.textContent = '0';
-  result.textContent = '0';
+  if(!(sequence == '' && expression.textContent == '0' && result.textContent == '0'){
+        sequence = '';
+        expression.textContent = '0';
+        result.textContent = '0';
+     }
 }
 
 /* developed by luigi benvenuti - luigibenvenuti.com */
